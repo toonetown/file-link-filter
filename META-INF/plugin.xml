@@ -1,0 +1,21 @@
+<idea-plugin version="2">
+    <id>com.toonetown.intellij.file_link_filter</id>
+    <name>File Link Filter</name>
+    <version>1.0</version>
+    <vendor email="nathan@toonetown.com" url="http://www.toonetown.com">Nathan Toone</vendor>
+
+    <description><![CDATA[
+        Plugin which filters the output window for file paths.  Based on
+        <a href="https://github.com/minchenkov/output-link-filter">https://github.com/minchenkov/output-link-filter</a>
+    ]]></description>
+
+    <change-notes><![CDATA[
+        Initial Release
+    ]]></change-notes>
+
+    <idea-version since-build="123.72"/>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <consoleFilterProvider implementation="com.toonetown.intellij.file_link_filter.FileLinkFilterProvider" />
+    </extensions>
+</idea-plugin>
